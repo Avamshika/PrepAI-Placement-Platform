@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrepAI Dataset Insights</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #060816;
+      --card: #121933;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    .card { background: var(--card); padding: 1.5rem; border-radius: 16px; margin-bottom: 1.5rem; }
+    h1, h2 { margin-top: 0; }
+    p { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .stat { background: rgba(255,255,255,0.04); padding: 1rem; border-radius: 12px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Placement Dataset Insights</h1>
+      <p>This lightweight page shows the core benchmark values used by PrepAI for placement readiness estimates.</p>
+      <a href="../index.html">← Back to home</a>
+    </div>
+
+    <div class="card">
+      <h2>Benchmark Averages</h2>
+      <div class="grid">
+        <div class="stat"><strong>Average CGPA:</strong> 8.0</div>
+        <div class="stat"><strong>Average Projects:</strong> 3</div>
+        <div class="stat"><strong>Average Internships:</strong> 1</div>
+        <div class="stat"><strong>Average Coding Score:</strong> 75</div>
+        <div class="stat"><strong>Average Aptitude Score:</strong> 70</div>
+        <div class="stat"><strong>Average Communication Score:</strong> 70</div>
+        <div class="stat"><strong>Average Mock Interview Score:</strong> 70</div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Dataset Snapshot</h2>
+      <p>The platform uses this dataset to estimate readiness and identify areas for improvement. The CSV file is available in the project root and can be connected to a full analytics dashboard later.</p>
+    </div>
+  </div>
+</body>
+</html>

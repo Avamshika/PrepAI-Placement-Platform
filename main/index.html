@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepAI - AI Placement Preparation Platform</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Decorative Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-brain-circuit"></i>
+                </div>
+                <span>Prep</span><span class="gradient-text">AI</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#statistics" class="nav-link">Statistics</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="login/login.html" class="btn btn-secondary nav-login">Log In</a>
+                <a href="signup.html" class="btn btn-primary nav-cta">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-container">
+            <div class="hero-badge animate-fade-in">
+                <span class="badge-icon"><i class="fa-solid fa-sparkles"></i></span>
+                <span class="badge-text">Next-Gen Placement Platform</span>
+            </div>
+            
+            <h1 class="hero-title animate-fade-in-up">
+                Accelerate Your Career with <br>
+                <span class="gradient-text">AI-Powered</span> Placement Prep
+            </h1>
+            
+            <p class="hero-subtitle animate-fade-in-up delay-1">
+                Stop jumping between dozens of platforms. Get a hyper-personalized learning roadmap, 
+                real-time AI resume ATS optimization, mock interviews, and automated predictive placement analytics.
+            </p>
+            
+            <div class="hero-ctas animate-fade-in-up delay-2">
+                <a href="https://copilot.microsoft.com/"
+   target="_blank"
+   class="btn btn-primary btn-lg glow-button">
+    Launch AI Copilot
+    <i class="fa-solid fa-bolt"></i>
+</a>
+                <a href="../learnmore.html" class="btn btn-secondary btn-lg"><i class="fa-solid fa-play"></i> Watch Demo</a>
+            </div>
+
+            <!-- Hero Visual (Interactive Glassmorphic Dashboard Preview) -->
+            <div class="hero-visual-wrapper animate-fade-in-up delay-3">
+                <div class="hero-visual">
+                    <div class="dashboard-header">
+                        <div class="window-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="window-title">PrepAI Workspace - Copilot Dashboard</div>
+                        <div class="window-status"><span class="pulse-indicator"></span> Live Analytics</div>
+                    </div>
+                    <div class="dashboard-content">
+                        <!-- Left Sidebar / Stats Widget -->
+                        <div class="dash-panel dash-left">
+                            <div class="dash-card profile-card">
+                                <div class="avatar-group">
+                                    <div class="avatar-placeholder">
+                                        <i class="fa-solid fa-user-tie"></i>
+                                    </div>
+                                    <div>
+                                        <h4>Swathi</h4>
+                                        <p>Software Engineer Path</p>
+                                    </div>
+                                </div>
+                                <div class="readiness-meter">
+                                    <div class="meter-info">
+                                        <span>Placement Readiness</span>
+                                        <span class="meter-val">87%</span>
+                                    </div>
+                                    <div class="meter-bar">
+                                        <div class="meter-progress" style="width: 87%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="dash-card company-card">
+                                <h5>Target Company Focus</h5>
+                                <div class="company-logos">
+                                    <div class="company-logo" title="Google"><i class="fa-brands fa-google"></i></div>
+                                    <div class="company-logo" title="Microsoft"><i class="fa-brands fa-microsoft"></i></div>
+                                    <div class="company-logo" title="Amazon"><i class="fa-brands fa-amazon"></i></div>
+                                    <div class="company-logo" title="Meta"><i class="fa-brands fa-meta"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main Roadmap Progress Graph -->
+                        <div class="dash-panel dash-center">
+                            <div class="dash-card roadmap-progress">
+                                <div class="card-header-flex">
+                                    <h4>Your AI Roadmap Milestone</h4>
+                                    <span class="badge-cyan">Active</span>
+                                </div>
+                                <div class="roadmap-steps">
+                                    <div class="step completed">
+                                        <div class="step-circle"><i class="fa-solid fa-check"></i></div>
+                                        <div class="step-details">
+                                            <h6>Data Structures</h6>
+                                            <p>Trees & Graphs</p>
+                                        </div>
+                                    </div>
+                                    <div class="step active">
+                                        <div class="step-circle"><i class="fa-solid fa-spinner fa-spin"></i></div>
+                                        <div class="step-details">
+                                            <h6>System Design</h6>
+                                            <p>Scalability & Caching</p>
+                                        </div>
+                                    </div>
+                                    <div class="step locked">
+                                        <div class="step-circle"><i class="fa-solid fa-lock"></i></div>
+                                        <div class="step-details">
+                                            <h6>AI Mock Interview</h6>
+                                            <p>Full-Loop Simulation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Insights Widget -->
+                        <div class="dash-panel dash-right">
+                            <div class="dash-card insights-card">
+                                <h4>AI Copilot Insight</h4>
+                                <div class="ai-chat-bubble">
+                                    <i class="fa-solid fa-robot ai-avatar"></i>
+                                    <p>"Your DSA efficiency is outstanding (92nd percentile). Focus on <strong>System Design</strong> patterns to raise your readiness for Tier-1 companies."</p>
+                                </div>
+                                <div class="resume-score-widget">
+                                    <div class="score-circle">
+                                        <svg viewBox="0 0 36 36" class="circular-chart">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                            <path class="circle" stroke-dasharray="82, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                            <text x="18" y="20.35" class="percentage">82</text>
+                                        </svg>
+                                        <div class="score-label">ATS Score</div>
+                                    </div>
+                                    <div class="score-actions">
+                                        <span class="score-status"><i class="fa-solid fa-circle-check text-green"></i> Optimised</span>
+                                        <a href="#" class="btn-text">Review PDF <i class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Practice Section -->
+    <section class="practice-section" id="practice">
+        <div class="section-container">
+            <div class="section-header scroll-trigger">
+                <h2 class="section-title">Practice the Questions <span class="gradient-text">That Matter</span></h2>
+                <p class="section-subtitle">
+                    Search, filter, and drill into curated coding problems aligned with top companies and real interview patterns.
+                </p>
+            </div>
+
+            <div class="practice-shell scroll-trigger">
+                <div class="practice-toolbar">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input id="practice-search" type="search" placeholder="Search questions, topics, or companies" />
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-label">Difficulty</div>
+                        <div class="pill-group" data-filter-group="difficulty">
+                            <button class="pill active" data-value="All">All</button>
+                            <button class="pill" data-value="Easy">Easy</button>
+                            <button class="pill" data-value="Medium">Medium</button>
+                            <button class="pill" data-value="Hard">Hard</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-label">Topic</div>
+                        <div class="pill-group" data-filter-group="topic">
+                            <button class="pill active" data-value="All">All</button>
+                            <button class="pill" data-value="Arrays">Arrays</button>
+                            <button class="pill" data-value="Strings">Strings</button>
+                            <button class="pill" data-value="Trees">Trees</button>
+                            <button class="pill" data-value="Graphs">Graphs</button>
+                            <button class="pill" data-value="DP">DP</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-label">Company</div>
+                        <div class="pill-group" data-filter-group="company">
+                            <button class="pill active" data-value="All">All</button>
+                            <button class="pill" data-value="Amazon">Amazon</button>
+                            <button class="pill" data-value="Google">Google</button>
+                            <button class="pill" data-value="Microsoft">Microsoft</button>
+                            <button class="pill" data-value="TCS">TCS</button>
+                            <button class="pill" data-value="Infosys">Infosys</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="practice-stats">
+                    <span id="practice-count">0 questions</span>
+                </div>
+
+                <div class="practice-grid" id="practice-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="section-container">
+            <div class="section-header scroll-trigger">
+                <h2 class="section-title">Engineered for Your <span class="gradient-text">Placement Victory</span></h2>
+                <p class="section-subtitle">
+                    Skip the generic advice. Leverage highly tailored AI tooling built specifically to align with current hiring trends.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1: Personalized Roadmaps -->
+                <div class="feature-card scroll-trigger">
+                    <div class="feature-icon glow-cyan">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+                    <h3 class="feature-title">Dynamic AI Roadmaps</h3>
+                    <p class="feature-text">
+                        Get a continuously updated roadmap generated instantly based on your dream target companies, timeline, and current skill set.
+                    </p>
+                    <div class="feature-link-wrapper">
+                        <a href="roadmap/roadmap.html" class="feature-link">Explore Roadmap Tool <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Feature 2: AI Resume Optimizer -->
+                <div class="feature-card scroll-trigger">
+                    <div class="feature-icon glow-purple">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <h3 class="feature-title">ATS Resume Optimizer</h3>
+                    <p class="feature-text">
+                        Upload your resume and get immediate feedback on key-word match, layout, formatting, and structural improvements tailored to job descriptions.
+                    </p>
+                    <div class="feature-link-wrapper">
+                        <a href="#" class="feature-link">Scan Resume <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Simulated AI Interviews -->
+                <div class="feature-card scroll-trigger">
+                    <div class="feature-icon glow-blue">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <h3 class="feature-title">Conversational Mock Mockups</h3>
+                    <p class="feature-text">
+                        Engage in fully interactive, real-time mock technical & behavioral interviews with speech analysis, pacing analytics, and code editor review.
+                    </p>
+                    <div class="feature-link-wrapper">
+                        <a href="#" class="feature-link">Try Sample Mock <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Predictive Placement Analytics -->
+                <div class="feature-card scroll-trigger">
+                    <div class="feature-icon glow-pink">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Placement Probability Insights</h3>
+                    <p class="feature-text">
+                        Input your credentials, mock scores, and background to calculate your predictive success rate, with prescriptive feedback on where to double down.
+                    </p>
+                    <div class="feature-link-wrapper">
+                        <a href="../placement.html" class="feature-link">Run Placement Predictor <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Feature 5: Daily Coding Arena -->
+                <div class="feature-card scroll-trigger">
+                    <div class="feature-icon glow-orange">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="feature-title">Curated DSA Challenges</h3>
+                    <p class="feature-text">
+                        Receive daily handpicked programming puzzles matching your target company’s historic frequency matrix, complete with instant step-by-step video hints.
+                    </p>
+                    <div class="feature-link-wrapper">
+                        <a href="dsaTracker/dsaTracker.html" class="feature-link">Open DSA Tracker <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Feature 6: Smart Study Notes -->
+                <div class="feature-card scroll-trigger">
+                    <div class="feature-icon glow-green">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3 class="feature-title">AI Knowledge Base</h3>
+                    <p class="feature-text">
+                        Search and learn with compressed cheat sheets, revision materials, and detailed summaries created automatically based on your weaker subtopics.
+                    </p>
+                    <div class="feature-link-wrapper">
+                        <a href="#" class="feature-link">Access Cheat Sheets <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section" id="statistics">
+        <div class="section-container">
+            <div class="statistics-wrapper scroll-trigger">
+                <div class="section-header text-center">
+                    <h2 class="section-title">The Numbers Behind the <span class="gradient-text">Success</span></h2>
+                    <p class="section-subtitle">Empowering ambitious students to land highly sought-after industry roles.</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number gradient-text" data-target="94">0%</div>
+                        <div class="stat-label">Placement Success Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number gradient-text" data-target="50">0k+</div>
+                        <div class="stat-label">Active Platform Users</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number gradient-text" data-target="10">0M+</div>
+                        <div class="stat-label">Coding Challenges Solved</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number gradient-text" data-target="14.2" data-decimals="1">0 LPA</div>
+                        <div class="stat-label">Average Placement Package</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-container">
+            <div class="section-header scroll-trigger">
+                <h2 class="section-title">Alumni Success Stories</h2>
+                <p class="section-subtitle">See how PrepAI guided these students from mock interviews to real-world corporate offers.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card scroll-trigger">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        "The simulated AI technical interview saved me. It gave me the exact style of real-time feedback on pacing and formatting that helped me crush my final technical round at Google!"
+                    </p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar user-1"></div>
+                        <div class="user-info">
+                            <h4>Rohan Malhotra</h4>
+                            <p>Software Engineer @ Google</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card scroll-trigger">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        "I raised my ATS score from 58% to 85% in under an hour using PrepAI's resume optimizer. It pointed out critical keyword gaps that landed me interview callbacks at Microsoft and Uber."
+                    </p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar user-2"></div>
+                        <div class="user-info">
+                            <h4>Sneha Kapoor</h4>
+                            <p>SWE Intern @ Microsoft</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card scroll-trigger">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        "The dynamic company roadmaps are sheer genius. Instead of wasting weeks reading irrelevant DSA materials, PrepAI showed me exactly which patterns Amazon prioritizes. 10/10!"
+                    </p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar user-3"></div>
+                        <div class="user-info">
+                            <h4>Aarav Mehta</h4>
+                            <p>SDE-1 @ Amazon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="section-container">
+            <div class="section-header scroll-trigger">
+                <h2 class="section-title">Simple, Transparent <span class="gradient-text">Pricing</span></h2>
+                <p class="section-subtitle">Start preparing for free or unlock unlimited AI-driven capabilities to supercharge your hiring outcomes.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card scroll-trigger">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p class="price-desc">Perfect for exploring the platform features.</p>
+                        <div class="price-value">$0<span>/lifetime</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Basic DSA Learning Path</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> 2 AI Resume Scans / month</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Daily Coding Challenges</li>
+                        <li class="disabled"><i class="fa-solid fa-circle-xmark text-red"></i> Live AI Mock Interviews</li>
+                        <li class="disabled"><i class="fa-solid fa-circle-xmark text-red"></i> Placement Predictive Analytics</li>
+                        <li class="disabled"><i class="fa-solid fa-circle-xmark text-red"></i> 24/7 Dedicated Mentorship Channel</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="signup.html" class="btn btn-outline btn-full">Start Free Trial</a>
+                    </div>
+                </div>
+
+                <!-- Pro Plan (Popular Choice) -->
+                <div class="pricing-card popular scroll-trigger">
+                    <div class="popular-ribbon">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>PrepAI Pro</h3>
+                        <p class="price-desc">Complete AI toolkit for targeted job readiness.</p>
+                        <div class="price-value">$19<span>/month</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Unlimited Personalized Roadmaps</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Unlimited ATS Resume Scans</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> 10 AI Mock Interviews / month</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Full Predictive Placement Analytics</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Company-Specific Prep Kits</li>
+                        <li class="disabled"><i class="fa-solid fa-circle-xmark text-red"></i> 1-on-1 Human Mock Review</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="signup.html" class="btn btn-primary btn-full glow-button">Upgrade to Pro <i class="fa-solid fa-sparkles"></i></a>
+                    </div>
+                </div>
+
+                <!-- Ultimate Plan -->
+                <div class="pricing-card scroll-trigger">
+                    <div class="pricing-header">
+                        <h3>Elite Placement</h3>
+                        <p class="price-desc">For high-tier role pursuits with human mentor oversight.</p>
+                        <div class="price-value">$49<span>/month</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Everything in Pro Plan</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Unlimited AI Mock Interviews</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> 2 Monthly Human-Expert Mock Reviews</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Resume Revision by Recruiters</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> Referral opportunities in partner network</li>
+                        <li><i class="fa-solid fa-circle-check text-green"></i> 24/7 Dedicated Priority Chat Support</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="signup.html" class="btn btn-outline btn-full">Join Elite Group</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="section-container">
+            <div class="section-header scroll-trigger">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about PrepAI capabilities and pricing models.</p>
+            </div>
+
+            <div class="faq-wrapper">
+                <div class="faq-item scroll-trigger">
+                    <button class="faq-question">
+                        <span>How does the AI Resume Optimizer assess ATS compatability?</span>
+                        <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our ATS (Applicant Tracking System) optimizer matches your resume text structure and technical keywords against thousands of verified job descriptions across tech and non-tech industries. It scores layout readability, detects broken tables or unparseable formats, and flags keyword voids that might prevent human screeners from seeing your file.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-trigger">
+                    <button class="faq-question">
+                        <span>What happens during a simulated AI mock interview?</span>
+                        <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The mock interview mimics real video-conferencing setups. Our conversational model asks technical, system design, or behavior-based questions. The interface records speech patterns to evaluate vocal speed, clarity, and keyword precision while offering a rich code-editor canvas to score real-time problem-solving approach and complexity optimization.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-trigger">
+                    <button class="faq-question">
+                        <span>Can I cancel or change my plan anytime?</span>
+                        <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely. You can easily upgrade, downgrade, or cancel your Pro or Elite subscription plan directly from your accounts billing dashboard at any time. If you cancel, your premium features will remain completely active until your billing cycle ends.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-trigger">
+                    <button class="faq-question">
+                        <span>How accurate are the Placement Predictive Analytics?</span>
+                        <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our predictive metrics are backed by anonymized placement results from tens of thousands of platform alumni and historical company cutoffs. By analyzing academic indicators, platform-tracked DSA speed, mock interview performance, and project richness, PrepAI generates realistic readiness metrics, though actual hiring events depend on external interview conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Footer Call To Action Section -->
+    <section class="cta-section">
+        <div class="section-container">
+            <div class="cta-wrapper scroll-trigger">
+                <div class="cta-inner">
+                    <h2 class="cta-title">Ready to Stand Out in the Hiring Pipeline?</h2>
+                    <p class="cta-subtitle">Empower your coding skills and resume readiness. Get hired by premium global companies in less than 3 months.</p>
+                    <div class="cta-actions">
+                        <a href="signup.html" class="btn btn-primary btn-lg glow-button">Start Preparing For Free <i class="fa-solid fa-sparkles"></i></a>
+                    </div>
+                    <div class="cta-footer-info">
+                        <span><i class="fa-solid fa-circle-check text-cyan"></i> No credit card required</span>
+                        <span><i class="fa-solid fa-circle-check text-cyan"></i> Instant setup in 1 minute</span>
+                        <span><i class="fa-solid fa-circle-check text-cyan"></i> Free Lifetime roadmap starter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <!-- Footer About Column -->
+                <div class="footer-col footer-about">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-icon"><i class="fa-solid fa-brain-circuit"></i></div>
+                        <span>Prep</span><span class="gradient-text">AI</span>
+                    </a>
+                    <p class="footer-desc">
+                        Democratizing elite placement preparation through state-of-the-art predictive models, conversational mock simulations, and hyper-personalized learning roadmaps.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <!-- Footer Column 1: Product -->
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="roadmap/roadmap.html">AI Roadmaps</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">AI Interviewer</a></li>
+                        <li><a href="#">Resume Scan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 2: Resources -->
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="datainsights/datasetInsights.html">Dataset Analytics</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="../learnmore.html">Demo Walkthrough</a></li>
+                        <li><a href="#">Career Blog</a></li>
+                        <li><a href="#">Student Helpdesk</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 3: Legal -->
+                <div class="footer-col">
+                    <h4>Company & Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Partner Network</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Security Integrity</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 PrepAI Platform Inc. All rights reserved. Built with modern dark theme and glassmorphism styling.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Security Guidelines</a>
+                    <span>&bull;</span>
+                    <a href="#">System Status</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

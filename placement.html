@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrepAI Placement Predictor</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="dashboard-card">
+      <h2>Placement Predictor</h2>
+      <p class="meta">Estimate your chances and prepare for the next step.</p>
+
+      <form id="placementForm" class="auth-card">
+        <label for="cgpa">CGPA</label>
+        <input type="number" step="0.01" id="cgpa" value="8.5" required />
+
+        <label for="branch">Branch</label>
+        <input type="text" id="branch" value="CSE" required />
+
+        <label for="collegeTier">College Tier</label>
+        <input type="text" id="collegeTier" value="Tier 1" required />
+
+        <label for="internships">Internships</label>
+        <input type="number" id="internships" value="1" required />
+
+        <label for="projects">Projects</label>
+        <input type="number" id="projects" value="3" required />
+
+        <label for="certifications">Certifications</label>
+        <input type="number" id="certifications" value="2" required />
+
+        <label for="coding">Coding Skill Score</label>
+        <input type="number" id="coding" value="85" required />
+
+        <label for="aptitude">Aptitude Score</label>
+        <input type="number" id="aptitude" value="78" required />
+
+        <label for="communication">Communication Score</label>
+        <input type="number" id="communication" value="74" required />
+
+        <label for="logical">Logical Reasoning Score</label>
+        <input type="number" id="logical" value="80" required />
+
+        <label for="mock">Mock Interview Score</label>
+        <input type="number" id="mock" value="76" required />
+
+        <label for="backlogs">Backlogs</label>
+        <input type="number" id="backlogs" value="0" required />
+
+        <label for="studyHours">Study Hours</label>
+        <input type="number" id="studyHours" value="4" required />
+
+        <button type="submit" class="btn primary">Predict</button>
+      </form>
+
+      <div id="resultCard" class="dashboard-card" style="margin-top: 20px; display: none;">
+        <h3>Prediction Result</h3>
+        <p id="chanceText" class="meta"></p>
+        <p id="salaryText" class="meta"></p>
+        <ul id="suggestionsList"></ul>
+        <canvas id="radarChart" height="220"></canvas>
+      </div>
+
+      <div class="dashboard-actions" style="margin-top: 20px;">
+        <a href="dashboard.html" class="btn secondary">Back to Dashboard</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/placement.js"></script>
+</body>
+</html>

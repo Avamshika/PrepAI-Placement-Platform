@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepAI - DSA Tracker</title>
+    <link rel="stylesheet" href="dsaTracker.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💻 DSA Progress Tracker</h1>
+
+        <div class="stats">
+            <div class="card">
+                <h3>Easy</h3>
+                <input type="number" id="easy" min="0" max="100">
+                <p>/100</p>
+            </div>
+
+            <div class="card">
+                <h3>Medium</h3>
+                <input type="number" id="medium" min="0" max="100">
+                <p>/100</p>
+            </div>
+
+            <div class="card">
+                <h3>Hard</h3>
+                <input type="number" id="hard" min="0" max="50">
+                <p>/50</p>
+            </div>
+        </div>
+
+        <button id="saveBtn">Save Progress</button>
+
+        <div class="topic-section">
+            <h2>📚 Topic-wise Progress</h2>
+
+            <div class="topic">
+                <label for="arrays">Arrays</label>
+                <input type="number" id="arrays" min="0" value="0">
+            </div>
+
+            <div class="topic">
+                <label for="strings">Strings</label>
+                <input type="number" id="strings" min="0" value="0">
+            </div>
+
+            <div class="topic">
+                <label for="linkedlist">Linked Lists</label>
+                <input type="number" id="linkedlist" min="0" value="0">
+            </div>
+
+            <div class="topic">
+                <label for="stack">Stacks & Queues</label>
+                <input type="number" id="stack" min="0" value="0">
+            </div>
+
+            <div class="topic">
+                <label for="trees">Trees</label>
+                <input type="number" id="trees" min="0" value="0">
+            </div>
+
+            <div class="topic">
+                <label for="graphs">Graphs</label>
+                <input type="number" id="graphs" min="0" value="0">
+            </div>
+
+            <div class="topic">
+                <label for="dp">Dynamic Programming</label>
+                <input type="number" id="dp" min="0" value="0">
+            </div>
+
+            <div class="topic">
+                <label for="bs">Binary Search</label>
+                <input type="number" id="bs" min="0" value="0">
+            </div>
+        </div>
+
+        <div class="summary">
+            <h2>Total Solved: <span id="total">0</span></h2>
+            <h2>Completion: <span id="percent">0</span>%</h2>
+
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+
+            <h2>🔥 Streak: <span id="streak">1</span> days</h2>
+        </div>
+    </div>
+
+    <script src="dsaTracker.js"></script>
+</body>
+</html>

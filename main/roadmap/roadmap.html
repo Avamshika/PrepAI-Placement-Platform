@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepAI - AI Roadmap Generator</title>
+
+    <link rel="stylesheet" href="roadmap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="roadmap-card">
+
+        <h1>🚀 AI Roadmap Generator</h1>
+        <p>Create your personalized placement roadmap.</p>
+
+        <form id="roadmapForm">
+
+            <div class="input-group">
+                <label>Current Year</label>
+
+                <select id="year" required>
+                    <option value="">Select Year</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Dream Company</label>
+
+                <select id="company" required>
+                    <option value="">Select Company</option>
+                    <option>Google</option>
+                    <option>Microsoft</option>
+                    <option>Amazon</option>
+                    <option>Adobe</option>
+                    <option>Oracle</option>
+                    <option>Flipkart</option>
+                    <option>TCS</option>
+                    <option>Infosys</option>
+                    <option>Wipro</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Current DSA Level</label>
+
+                <select id="level" required>
+                    <option value="">Select Level</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Study Hours / Day</label>
+
+                <input
+                    type="number"
+                    id="hours"
+                    placeholder="Example : 3"
+                    min="1"
+                    max="15"
+                    required>
+            </div>
+
+            <button type="submit" class="generate-btn">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                Generate AI Roadmap
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="result-card">
+
+        <h2>Your Personalized Roadmap</h2>
+
+        <div id="roadmapResult">
+
+            <p class="placeholder">
+                Fill the form and generate your roadmap.
+            </p>
+
+        </div>
+
+        <div class="progress-section">
+
+            <h3>Overall Progress</h3>
+
+            <div class="progress-bar">
+
+                <div id="progressFill"></div>
+
+            </div>
+
+            <p id="progressText">0% Completed</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/roadmap.js"></script>
+
+</body>
+</html>
