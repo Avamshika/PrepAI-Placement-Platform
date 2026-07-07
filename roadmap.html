@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personalized Roadmap | PrepAI</title>
+    <link rel="stylesheet" href="roadmap.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            Prep<span>AI</span>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Roadmap</a></li>
+                <li><a href="#">Progress</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="roadmap-container">
+
+        <section class="welcome-card">
+
+            <h1>
+                Your Personalized Placement Roadmap 🚀
+            </h1>
+
+            <p>
+                Based on your profile, PrepAI has created a personalized
+                preparation plan to maximize your placement chances.
+            </p>
+
+        </section>
+
+        <section class="student-card">
+
+            <h2>
+                Student Profile
+            </h2>
+
+            <div class="details">
+
+                <p>
+                    <strong>College:</strong>
+                    <span id="college"></span>
+                </p>
+
+                <p>
+                    <strong>Branch:</strong>
+                    <span id="branch"></span>
+                </p>
+
+                <p>
+                    <strong>Semester:</strong>
+                    <span id="semester"></span>
+                </p>
+
+                <p>
+                    <strong>Target Company:</strong>
+                    <span id="company"></span>
+                </p>
+
+                <p>
+                    <strong>Goal:</strong>
+                    <span id="goal"></span>
+                </p>
+
+                <p>
+                    <strong>Study Time:</strong>
+                    <span id="study"></span>
+                </p>
+
+                <p>
+                    <strong>Graduation Year:</strong>
+                    <span id="gy"></span>
+                </p>
+
+                <p>
+                    <strong>CGPA:</strong>
+                    <span id="cgpa"></span>
+                </p>
+
+                <p>
+                    <strong>Projects:</strong>
+                    <span id="projects"></span>
+                </p>
+
+                <p>
+                    <strong>Internships:</strong>
+                    <span id="internships"></span>
+                </p>
+
+            </div>
+
+            <h3>
+                Skills
+            </h3>
+
+            <ul id="skills"></ul>
+
+        </section>
+
+        <section class="progress-card">
+
+            <h2>
+                Placement Readiness Score
+            </h2>
+
+            <h1 id="score">
+                0/100
+            </h1>
+
+            <p id="scoreMessage"></p>
+
+        </section>
+
+        <section class="progress-card">
+
+            <h2>
+                Strengths 💪
+            </h2>
+
+            <ul id="strengths"></ul>
+
+        </section>
+
+        <section class="progress-card">
+
+            <h2>
+                Areas To Improve 📚
+            </h2>
+
+            <ul id="weaknesses"></ul>
+
+        </section>
+
+        <section class="roadmap-card">
+
+            <h2>
+                Personalized Roadmap
+            </h2>
+
+            <div id="roadmap"></div>
+
+        </section>
+
+        <section class="progress-card">
+
+            <h2>
+                Progress
+            </h2>
+
+            <progress
+                id="progressBar"
+                value="0"
+                max="100">
+            </progress>
+
+            <p id="progressText">
+                0% Completed
+            </p>
+
+        </section>
+
+        <section class="buttons">
+
+            <a href="../index.html">
+                <button>
+                    ← Back
+                </button>
+            </a>
+
+            <button id="startBtn">
+                Start Progress
+            </button>
+
+            <button id="resetBtn">
+                Reset Progress
+            </button>
+
+            <button id="download">
+                Download PDF
+            </button>
+
+        </section>
+
+        <section class="roadmap-card">
+
+            <h2>
+                Recommended Resources
+            </h2>
+
+            <div id="resources"></div>
+
+        </section>
+
+    </main>
+
+    <script src="roadmap.js"></script>
+
+</body>
+</html>
